@@ -24,7 +24,7 @@ namespace WpfApp3.Pages
     public partial class LogIn : Page
     {
         Doctor Doctor1 = new Doctor();
-        AuthorisationDoctor a = new AuthorisationDoctor();
+        AuthorisationDoctor  a { get; set; } = new ();
         public LogIn()
         {
             InitializeComponent();
