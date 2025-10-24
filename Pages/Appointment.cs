@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace WpfApp3.Pages
@@ -65,6 +66,20 @@ namespace WpfApp3.Pages
                 if (value != _recomendations)
                 {
                     _recomendations = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        private string _doctorInfo;
+        [JsonIgnore]
+        public string DoctorInfo
+        {
+            get => _doctorInfo;
+            set
+            {
+                if (value != _doctorInfo)
+                {
+                    _doctorInfo = value;
                     OnPropertyChanged();
                 }
             }

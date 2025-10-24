@@ -57,8 +57,8 @@ ItemsSource="{Binding  Patient.Appointments}"
                                 <TextBlock Text="{Binding Date}"/>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Id доктора: "/>
-                                <TextBlock Text="{Binding Doctor_id}"/>
+                                <TextBlock Text="Доктор: "/>
+                                <TextBlock Text="{Binding DoctorInfo}"/>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal">
                                 <TextBlock Text="Диагноз: "/>
